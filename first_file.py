@@ -1,6 +1,7 @@
 # my (not) first Python code
-print('Hello, cat 1!')
-print('Hello, cat 2!')
-print('Hello, cat 3!')
-# this code works as it should
-# Victor is author
+print('Hello, dog 1!')
+print('Hello, dog 2!')
+print('Hello, dog 3!')
+print('Hello, dog 4!')
+print('Hello, dog 5!')
+# git check
