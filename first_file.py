@@ -1,3 +1,3 @@
-#my (not) first Python code
-print('Hello, world!')
-#check
+# my (not) first Python code
+print('Hello, dogs!')
+# gti scheck
