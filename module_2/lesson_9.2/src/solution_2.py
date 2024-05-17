@@ -1,6 +1,3 @@
-# rgb_input = input('RGB: ').strip('()')
-# rgb_input = [int(i) for i in rgb_input.split(', ')]
-
 def convert_to_hex(rgb_input) -> str:
     hex_color: int = '#'
     for i in rgb_input:
@@ -13,5 +10,3 @@ def convert_to_hex(rgb_input) -> str:
 convert_to_hex((255, 0, 0))
 convert_to_hex((0, 255, 0))
 convert_to_hex((0, 0, 255))
-
-
