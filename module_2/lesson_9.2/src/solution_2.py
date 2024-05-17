@@ -1,4 +1,4 @@
-def convert_to_hex(rgb_input) -> str:
+def convert_to_hex(rgb_input):
     hex_color: int = '#'
     for i in rgb_input:
         if i == 0:
