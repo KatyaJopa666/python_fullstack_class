@@ -1,5 +1,5 @@
 def convert_to_hex(rgb_input):
-    hex_color: int = '#'
+    hex_color: str = '#'
     for i in rgb_input:
         if i == 0:
             hex_color += '00'
