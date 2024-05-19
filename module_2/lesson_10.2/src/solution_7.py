@@ -16,11 +16,11 @@
 
 
 def calculate_discount(prices: list[int]) -> str:
-    discounted_price: int = prices[-1] - 0.1 * prices[-2]
+    discounted_price: int = int(prices[-1] - 0.1 * prices[-2])
     prices.pop()
     if len(prices) == 1:
-        return str(prices[0])+', '+str(int(discounted_price))
-    return calculate_discount(prices) + ', ' + str(int(discounted_price))
+        return str(prices[0])+', '+str(discounted_price)
+    return calculate_discount(prices) + ', ' + str(discounted_price)
 
 
 print(calculate_discount([1000, 2000, 3000, 5000, 10000, 15000]))
