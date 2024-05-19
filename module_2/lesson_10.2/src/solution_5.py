@@ -1,4 +1,4 @@
-def analyze_ad_efficiency(clicks: int, shows: int, views: int) -> str:
+def analyze_ad_efficiency(clicks: int, shows: int, views: int):
     efficiency = clicks / shows
     if efficiency > 0.1:
         print('Высокая')

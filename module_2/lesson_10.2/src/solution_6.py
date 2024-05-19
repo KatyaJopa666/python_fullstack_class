@@ -1,4 +1,4 @@
-def find_max_price(prices: list[str]) -> int:
+def find_max_price(prices: list[str]):
     if len(prices) > 1:
         if prices[0] >= prices[-1]:
             prices.pop()

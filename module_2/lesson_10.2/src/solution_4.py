@@ -1,4 +1,4 @@
-def choose_ad_platform(budget: int) -> str:
+def choose_ad_platform(budget: int):
     if budget > 5000:
         print('Instagram')
     elif budget >= 1000:
