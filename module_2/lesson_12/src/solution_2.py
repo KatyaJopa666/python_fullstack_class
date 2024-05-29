@@ -11,7 +11,7 @@ def package_order(order_id: int) -> str:
 def send_order(
                checking_func: Callable[[list[str]], bool],
                packing_func: Callable[[int], str],
-               order: dict[str: int, str: list[str]]
+               order: dict[str, int | list[str]]
                ) -> str:
     
     if checking_func(order['items']):

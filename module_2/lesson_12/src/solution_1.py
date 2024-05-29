@@ -1,15 +1,15 @@
-from typing import Callable
+from statistics import mean
 
-def collect_data(raw_data: list[int]) -> Callable[[list[int]], Callable[[str], None]]:
-    return process_data(raw_data)
-
-
-def process_data(data: list[int]) -> Callable[[str], None]:
-    average: int = str(sum(data) / len(data)).strip('.0')
-    return summarize_data(average)
+def collect_data(raw_data: list[int]) -> None:
+    process_data(raw_data)
 
 
-def summarize_data(result: str) -> None:
+def process_data(data: list[int]) -> None:
+    average: float = mean(data)
+    summarize_data(average)
+
+
+def summarize_data(result: float) -> None:
     print(f'Итог: Среднее значение: {result}')
 
     

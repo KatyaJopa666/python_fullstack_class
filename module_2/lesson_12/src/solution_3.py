@@ -3,7 +3,7 @@ from typing import Callable
 def filter_data(
                values: list[int],
                condition: Callable[[int], bool]
-               ) -> str:
+               ) -> None:
     
     result: list[int] = [i for i in values if condition(i)]
     print (f'Отфильтрованные данные: {result}')
